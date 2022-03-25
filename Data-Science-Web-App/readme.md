@@ -5,6 +5,9 @@ https://data.cityofnewyork.us/Public-Safety/Motor-Vehicle-Collisions-Crashes/h9g
 ## Showcase
 
 <div align="center">
-    <a><img src="./Showcase/1" style="border-radius:10px"></a>
+    <a><img src="https://raw.githubusercontent.com/martinesk/Personal-Projects/main/Data-Science-Web-App/Showcase/1.png" style="border-radius:10px"></a>
+</div>
+<div align="center">
+    <a><img src="https://raw.githubusercontent.com/martinesk/Personal-Projects/main/Data-Science-Web-App/Showcase/2.png" style="border-radius:10px"></a>
 </div>
 
