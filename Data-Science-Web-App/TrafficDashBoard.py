@@ -7,7 +7,7 @@ import plotly.express as px
 
 st.title('NYC Vehicle Collision Visualization')
 
-data_path = './Dataset/Motor_Vehicle_Collisions_-_Crashes.csv'
+data_path = 'https://drive.google.com/u/0/uc?id=1Dw0qPEs0TNzCcnNVH3yPjW5gS9zIQTbo&export=download'
 colunm_name = ['CRASH_DATE', 'CRASH_TIME', 'BOROUGH', 'ZIP_CODE', 'LATITUDE',
        'LONGITUDE', 'LOCATION', 'ON_STREET_NAME', 'CROSS_STREET_NAME',
        'OFF_STREET_NAME', 'INJURED_PERSONS', 'KILLED_PERSONS',
