@@ -43,7 +43,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.markdown('<p class="header">Empower Business With Data</p>', unsafe_allow_html=True)
-st.markdown('<p id="subheader"> Strategy + Data + Execution </p>')
+st.markdown('<p id="subheader"> Strategy + Data + Execution </p>', unsafe_allow_html=True)
 
 #profile = Image.open("https://raw.githubusercontent.com/martinesk/Personal-Projects/main/pic/IMG_3565.JPG")
 
@@ -72,8 +72,15 @@ with intro:
 
 
 
-st.markdown('<p class="img">[![LinkIn](https://raw.githubusercontent.com/martinesk/Personal-Projects/main/pic/LI-In-Bug.png)]</p>'
-            '(https://www.linkedin.com/in/ding-ma-0b5781110/)', unsafe_allow_html=1)
+st.markdown('<div>'
+            '<a href="https://github.com/martinesk/Personal-Projects">'
+            '<img src="https://raw.githubusercontent.com/martinesk/Personal-Projects/main/pic/GitHub-Mark-64px.png">'
+            '</a>'
+            '<a style="align"     href="https://www.linkedin.com/in/ding-ma-0b5781110/">'
+            '<img src="https://raw.githubusercontent.com/martinesk/Personal-Projects/main/pic/LI-In-Bug.png" width="30px" height="30px">'
+            '</a>'
+            '</div>'
+            , unsafe_allow_html=1)
 
 
 st.markdown('<img src="https://raw.githubusercontent.com/martinesk/Personal-Projects/main/pic/LI-In-Bug.png" width="20" height="20" herf="https://www.linkedin.com/in/ding-ma-0b5781110/>'

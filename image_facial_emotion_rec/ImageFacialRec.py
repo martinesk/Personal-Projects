@@ -202,10 +202,10 @@ Train the Model
 '''
 Load the results
 '''
-with open('./image_facial_emotion_rec/Dataset/KeyPointDetector.json', 'r') as json_file:
+with open('http://52.15.187.123/KeyPointDetector.json', 'r') as json_file:
     json_SavedModel = json_file.read()
 model = tf.keras.models.model_from_json(json_SavedModel)
-model.load_weights('./image_facial_emotion_rec/Dataset/weights.hdf5')
+model.load_weights('http://52.15.187.123/weights.hdf5')
 model.compile(loss="mean_squared_error", optimizer = 'adam', metrics = ['accuracy'])
 
 result = model.evaluate(X_test,y_test)
