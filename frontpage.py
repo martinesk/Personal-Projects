@@ -35,6 +35,10 @@ st.markdown("""
 #subheader {
     font-size:40px !important;
 }
+.img{
+    width:20px;
+    height:300px
+}
 </style>
 """, unsafe_allow_html=True)
 
@@ -52,21 +56,29 @@ with pic:
     st.image("https://raw.githubusercontent.com/martinesk/Personal-Projects/main/pic/IMG_3565.png", width=200)
 
 with intro:
-    st.markdown("""Hi I'm Ding, 
+    st.markdown("""
+    
+    Hi I'm Ding, 
+    
     I'm a seasoned consultant/DS in international trade and business strategy. 
+    
     Combining years of internation business insights with state of art big data analysis and deeplearning models, I serve my clients with insightful business strategy, big data analysis and firm execution planning.
-    Current based in 📍Los Angelos with clients in 📍UK 📍Dubai 📍Shanghai 📍Beijing 📍Seattle 📍New York. University of Washington alumni.  
+    
+    Current based in 📍Los Angelos with clients in 📍UK 📍Dubai 📍Shanghai 📍Beijing 📍Seattle 📍New York. University of Washington alumni. 
+    
     
     
     """)
 
 
 
-st.write('[Create](https://share.streamlit.io/martinesk/personal-projects/main/ML-Web-App/MLWebAppFramework.py)')
+st.markdown('<p class="img">[![LinkIn](https://raw.githubusercontent.com/martinesk/Personal-Projects/main/pic/LI-In-Bug.png)]</p>'
+            '(https://www.linkedin.com/in/ding-ma-0b5781110/)', unsafe_allow_html=1)
 
 
-st.markdown('[Create](https://share.streamlit.io/martinesk/personal-projects/main/ML-Web-App/MLWebAppFramework.py)', unsafe_allow_html=1)
+st.markdown('<img src="https://raw.githubusercontent.com/martinesk/Personal-Projects/main/pic/LI-In-Bug.png" width="20" height="20" herf="https://www.linkedin.com/in/ding-ma-0b5781110/>'
 
+            , unsafe_allow_html=1)
 
 
 col1 , col2 = st.columns([2,1])
