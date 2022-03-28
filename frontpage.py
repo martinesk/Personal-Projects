@@ -49,18 +49,23 @@ st.header(" ")
 
 pic , intro = st.columns([2,5])
 with pic:
-    st.image("https://raw.githubusercontent.com/martinesk/Personal-Projects/main/pic/IMG_3565.JPG", width=200)
+    st.image("https://raw.githubusercontent.com/martinesk/Personal-Projects/main/pic/IMG_3565.png", width=200)
 
 with intro:
-    st.text("""Experienced Consultant""")
+    st.markdown("""Hi I'm Ding, 
+    I'm a seasoned consultant/DS in international trade and business strategy. 
+    Combining years of internation business insights with state of art big data analysis and deeplearning models, I serve my clients with insightful business strategy, big data analysis and firm execution planning.
+    Current based in 📍Los Angelos with clients in 📍UK 📍Dubai 📍Shanghai 📍Beijing 📍Seattle 📍New York. University of Washington alumni.  
+    
+    
+    """)
 
-st.header('Create Business Solution with the Power of Data')
-st.write('')
+
 
 st.write('[Create](https://share.streamlit.io/martinesk/personal-projects/main/ML-Web-App/MLWebAppFramework.py)')
-st.header('other shit')
-st.slider('somehting',0,100)
-st.markdown('https://share.streamlit.io/martinesk/personal-projects/main/ML-Web-App/MLWebAppFramework.py', unsafe_allow_html=1)
+
+
+st.markdown('[Create](https://share.streamlit.io/martinesk/personal-projects/main/ML-Web-App/MLWebAppFramework.py)', unsafe_allow_html=1)
 
 
 
