@@ -10,7 +10,7 @@ json_file.close()
 
 loaded_model = model_from_json(loaded_json_model)
 
-loaded_model.load_weights('./model.h5')
+loaded_model.load_weights('./bart-simpson-text-generator/model.h5')
 
 with open('./bart-chalkboard-data.txt','r',encoding='utf-8') as file:
     data = file.read()
