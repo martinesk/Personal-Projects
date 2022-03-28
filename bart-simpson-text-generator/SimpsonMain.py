@@ -42,7 +42,7 @@ max_length = 67
 
 st.title('The Simpsons Chalkboard Gag Text Generator.')
 
-image = Image.open('./1.jpeg')
+image = Image.open('./bart-simpson-text-generator/1.jpeg')
 st.image(image, use_column_width=True)
 
 n_words = st.number_input('Type the number of words you want to generate', min_value=1)
