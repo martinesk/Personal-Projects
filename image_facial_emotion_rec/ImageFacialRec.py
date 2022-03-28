@@ -21,7 +21,7 @@ from sklearn.metrics import mean_squared_error
 from math import sqrt
 
 # Load Data
-facialpoints_df = pd.read_csv('./Dataset/KeyFacialPoints.csv')
+facialpoints_df = pd.read_csv('./image_facial_emotion_rec/Dataset/KeyFacialPoints.csv')
 facialpoints_df['Image'] = facialpoints_df['Image'].apply(lambda x: np.fromstring(x, dtype = int, sep=' ').reshape(96,96))
 
 
@@ -202,10 +202,10 @@ Train the Model
 '''
 Load the results
 '''
-with open('./Dataset/KeyPointDetector.json', 'r') as json_file:
+with open('./image_facial_emotion_rec/Dataset/KeyPointDetector.json', 'r') as json_file:
     json_SavedModel = json_file.read()
 model = tf.keras.models.model_from_json(json_SavedModel)
-model.load_weights('./Dataset/weights.hdf5')
+model.load_weights('./image_facial_emotion_rec/Dataset/weights.hdf5')
 model.compile(loss="mean_squared_error", optimizer = 'adam', metrics = ['accuracy'])
 
 result = model.evaluate(X_test,y_test)
