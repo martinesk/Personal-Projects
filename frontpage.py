@@ -41,15 +41,18 @@ st.markdown("""
 st.markdown('<p class="header">Empower Business With Data</p>', unsafe_allow_html=True)
 st.markdown('<p id="subheader"> Strategy + Data + Execution </p>')
 
-profile = Image.open()
+#profile = Image.open("https://raw.githubusercontent.com/martinesk/Personal-Projects/main/pic/IMG_3565.JPG")
 
 
+st.header("  ")
+st.header(" ")
 
-
-pic , intro = st.columns([2,1])
+pic , intro = st.columns([2,5])
 with pic:
-    st.image(profile, use_column_width='auto')
+    st.image("https://raw.githubusercontent.com/martinesk/Personal-Projects/main/pic/IMG_3565.JPG", width=200)
 
+with intro:
+    st.text("""Experienced Consultant""")
 
 st.header('Create Business Solution with the Power of Data')
 st.write('')
