@@ -12,7 +12,7 @@ loaded_model = model_from_json(loaded_json_model)
 
 loaded_model.load_weights('./bart-simpson-text-generator/model.h5')
 
-with open('./bart-chalkboard-data.txt','r',encoding='utf-8') as file:
+with open('./bart-simpson-text-generator/bart-chalkboard-data.txt','r',encoding='utf-8') as file:
     data = file.read()
 
 def generate_text(model,tokenizer,max_length,seed_text,n_words):
