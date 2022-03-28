@@ -17,7 +17,7 @@ def main():
 
     @st.cache(persist=True)
     def load_data():
-        data = pd.read_csv('./Dataset/mushrooms.csv')
+        data = pd.read_csv('./ML-Web-App/Dataset/mushrooms.csv')
         label = LabelEncoder()
         for col in data.columns:
             data[col] = label.fit_transform(data[col])
