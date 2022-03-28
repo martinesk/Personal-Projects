@@ -1,0 +1,2 @@
+plotly.py>=5.6.0
+pydeck>=0.7.1
