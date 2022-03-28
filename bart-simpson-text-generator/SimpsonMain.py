@@ -29,7 +29,7 @@ def generate_text(model,tokenizer,max_length,seed_text,n_words):
         predicted_word = ''
         for word, index in tokenizer.word_index.items():
 
-            if index == yhat.any():
+            if index == yhat.argmax():
                 predicted_word = word
                 break
         text_generated += ' ' + predicted_word
