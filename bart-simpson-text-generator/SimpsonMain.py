@@ -4,7 +4,7 @@ from tensorflow.keras.models import model_from_json
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from PIL import Image
 
-json_file = open('./model.json', 'r')
+json_file = open('./bart-simpson-text-generator/model.json', 'r')
 loaded_json_model = json_file.read()
 json_file.close()
 
