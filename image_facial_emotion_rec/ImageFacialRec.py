@@ -21,7 +21,7 @@ from sklearn.metrics import mean_squared_error
 from math import sqrt
 
 # Load Data
-facialpoints_df = pd.read_csv('./image_facial_emotion_rec/Dataset/KeyFacialPoints.csv')
+facialpoints_df = pd.read_csv('http://52.15.187.123/KeyFacialPoints.csv')
 facialpoints_df['Image'] = facialpoints_df['Image'].apply(lambda x: np.fromstring(x, dtype = int, sep=' ').reshape(96,96))
 
 
