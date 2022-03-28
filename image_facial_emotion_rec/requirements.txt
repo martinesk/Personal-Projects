@@ -5,3 +5,4 @@ tensorflow>=2.2.0
 scikit-learn>=1.0.2
 pandas>=1.0.3
 numpy>=1.18.4
+matplotlib>=3.2.1
