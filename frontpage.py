@@ -1,29 +1,7 @@
 import streamlit as st
 from PIL import Image
 
-# st.markdown('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">', unsafe_allow_html=True)
-#
-# st.markdown("""
-# <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #3498DB;">
-#   <a class="navbar-brand" href="https://youtube.com/dataprofessor" target="_blank">Data Professor</a>
-#   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-#     <span class="navbar-toggler-icon"></span>
-#   </button>
-#   <div class="collapse navbar-collapse" id="navbarNav">
-#     <ul class="navbar-nav">
-#       <li class="nav-item active">
-#         <a class="nav-link disabled" href="#">Home <span class="sr-only">(current)</span></a>
-#       </li>
-#       <li class="nav-item">
-#         <a class="nav-link" href="https://youtube.com/dataprofessor" target="_blank">YouTube</a>
-#       </li>
-#       <li class="nav-item">
-#         <a class="nav-link" href="https://twitter.com/thedataprof" target="_blank">Twitter</a>
-#       </li>
-#     </ul>
-#   </div>
-# </nav>
-# """, unsafe_allow_html=True)
+
 
 st.set_page_config(layout="wide")
 
@@ -60,13 +38,15 @@ st.markdown("""
     color:grey;
 
 }
+#pro_pic{
+    margin-left=1000px;
+
+}
 </style>
 """, unsafe_allow_html=True)
 
 st.markdown('<p class="header">Empower Business With Data</p>', unsafe_allow_html=True)
 st.markdown('<p id="subheader"> Strategy + Data + Execution </p>', unsafe_allow_html=True)
-
-#profile = Image.open("https://raw.githubusercontent.com/martinesk/Personal-Projects/main/pic/IMG_3565.JPG")
 
 
 st.header("  ")
@@ -74,18 +54,26 @@ st.header(" ")
 
 pic , intro = st.columns([2,5])
 with pic:
-    st.image("https://raw.githubusercontent.com/martinesk/Personal-Projects/main/pic/IMG_3565.png", width=200)
+    #st.image("https://raw.githubusercontent.com/martinesk/Personal-Projects/main/pic/IMG_3565.png", width=200)
+    st.markdown('<div>'                
+                '<img id=pro_pic src="https://raw.githubusercontent.com/martinesk/Personal-Projects/main/pic/IMG_3565.png" width="200px" >'
+               
+                '</div>'
+                , unsafe_allow_html=1)
+
+
 
 with intro:
     st.markdown("""
     
-    Hi I'm Ding, 
+    I love travel around the world and also fascinated by the endless possibilities of what a business can achieve.
     
-    I'm a seasoned consultant/DS in international trade and business strategy. 
+    I started my business ventures early in my life. After a couple early successes I started to help other businesses, regardless of sizes, with their oversea expansions with my good friends and partners around the world. 
     
-    Combining years of internation business insights with state of art big data analysis and deeplearning models, I serve my clients with insightful business strategy, big data analysis and firm execution planning.
+    Not long my study in MBA, I realized the power of big data and the astonishing things you can achieve by leveraging those state of art Machine Learning and Deep Learning models.
+    Combining years of internation business strategy and execution experiences with the insights from big data, I serve my clients with insightful business strategy, big data analysis and firm execution planning.
     
-    Current based in 📍Los Angelos with clients in 📍UK 📍Dubai 📍Shanghai 📍Beijing 📍Seattle 📍New York. University of Washington alumni. 
+    Current based in 📍Los Angelos with clients in 📍London 📍Dubai 📍Shanghai 📍Beijing 📍Seattle 📍New York.   University of Washington alumni. 
     
     
     """)
