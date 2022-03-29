@@ -204,13 +204,12 @@ Train the Model
 Load the results
 '''
 
-detector = requests.get(url='http://52.15.187.123/KeyPointDetector.json', allow_redirects=True)
-weights = requests.get(url='http://52.15.187.123/weights.hdf5', allow_redirects=True)
 
-with open(detector, 'r') as json_file:
+
+with open('./Dataset/KeyPointDetector.json', 'r') as json_file:
     json_SavedModel = json_file.read()
 model = tf.keras.models.model_from_json(json_SavedModel)
-model.load_weights(weights)
+model.load_weights('./Dataset/weights.hdf5')
 model.compile(loss="mean_squared_error", optimizer = 'adam', metrics = ['accuracy'])
 
 result = model.evaluate(X_test,y_test)

@@ -35,9 +35,30 @@ st.markdown("""
 #subheader {
     font-size:40px !important;
 }
-.img{
-    width:20px;
-    height:300px
+#img-git{
+    margin-right:20px;
+    margin-left:50px
+}
+#consult_link{
+    font-size: 40px;
+    margin-left:22px;
+    color:grey;
+}
+#consult_intro{
+    color:grey;
+}
+#image_face{
+    width=300px;
+    height=500px;
+}
+#video_face{
+    width=300px;
+    height=500px;
+}
+.ds_showcase{
+    margin-left: 220px;
+    color:grey;
+
 }
 </style>
 """, unsafe_allow_html=True)
@@ -67,30 +88,83 @@ with intro:
     Current based in 📍Los Angelos with clients in 📍UK 📍Dubai 📍Shanghai 📍Beijing 📍Seattle 📍New York. University of Washington alumni. 
     
     
-    
     """)
 
 
-
 st.markdown('<div>'
-            '<a href="https://github.com/martinesk/Personal-Projects">'
-            '<img src="https://raw.githubusercontent.com/martinesk/Personal-Projects/main/pic/GitHub-Mark-64px.png">'
-            '</a>'
-            '<a style="align"     href="https://www.linkedin.com/in/ding-ma-0b5781110/">'
-            '<img src="https://raw.githubusercontent.com/martinesk/Personal-Projects/main/pic/LI-In-Bug.png" width="30px" height="30px">'
-            '</a>'
+                '<a id="img-git" href="https://github.com/martinesk/Personal-Projects">'
+                    '<img src="https://raw.githubusercontent.com/martinesk/Personal-Projects/main/pic/GitHub-Mark-Light-120px-plus.png" width="30px" height="30px">'
+                '</a>'
+                '<a style="align"     href="https://www.linkedin.com/in/ding-ma-0b5781110/">'
+                    '<img src="https://raw.githubusercontent.com/martinesk/Personal-Projects/main/pic/LI-In-Bug.png" width="30px" height="30px">'
+                '</a>'
+                
             '</div>'
             , unsafe_allow_html=1)
+st.header(" ")
+
+if st.button("More about my work"):
+
+    st.header(" ")
+    st.markdown("<h1 id='consult_intro'>More About International Business Consulting: <a id='consult_link' href='https://www.pioneerunion.com/'>"
+                            'https://www.pioneerunion.com'
+                        '</a>''</h1>', unsafe_allow_html=True)
+    st.markdown("<h1 style= 'right-align '>DS/ML Selected Work Portfolio</h1>", unsafe_allow_html=True)
 
 
-st.markdown('<img src="https://raw.githubusercontent.com/martinesk/Personal-Projects/main/pic/LI-In-Bug.png" width="20" height="20" herf="https://www.linkedin.com/in/ding-ma-0b5781110/>'
-
-            , unsafe_allow_html=1)
 
 
-col1 , col2 = st.columns([2,1])
-with col1:
-    st.header('Facial Recognition')
+    st.markdown("<h1 class='ds_showcase'>"
+                    "<a href='http://52.15.187.123:5000/' style='color:grey'>"
+                    "Video Facial/Emotional Recognition"
+                "</a>"
+                "</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 class='ds_showcase'>"
+                "<a href='https://share.streamlit.io/martinesk/personal-projects/main/image_facial_emotion_rec/streamlit_imgfacerec_main.py' style='color:grey'>"
+                    "Static Facial Feature Recognition"
+                "</a>"
+                "</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 class='ds_showcase'>"
+                "<a href='https://share.streamlit.io/martinesk/personal-projects/main/ML-Web-App/MLWebAppFramework.py' style='color:grey'>"
+                    "Interactive Machine Learning Web App Framework"
+                "</a>"
+                "</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 class='ds_showcase'>"
+                "<a href='https://share.streamlit.io/martinesk/personal-projects/main/bart-simpson-text-generator/SimpsonMain.py' style='color:grey'>"
+                    "NLP: Text Generation"
+                "</a>"
+                "</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 class='ds_showcase'>"
+                "<a href='https://share.streamlit.io/martinesk/personal-projects/main/Data-Science-Web-App/TrafficDashBoard.py' style='color:grey'>"
+                    "Data Mining Showcase"
+                "</a>"
+                "</h1>", unsafe_allow_html=True)
 
-with col2:
-    st.header('ML Dashboard')
+
+
+
+
+
+
+
+
+
+
+    # st.markdown('<div>'
+    #             '<a id="image_face" href="https://share.streamlit.io/martinesk/personal-projects/main/image_facial_emotion_rec/streamlit_imgfacerec_main.py">'
+    #             '<img src="https://raw.githubusercontent.com/martinesk/Personal-Projects/main/pic/Figure_5.png" >'
+    #             '</a>'
+    #
+    #             '</div>'
+    #             , unsafe_allow_html=1)
+
+    # st.markdown('<div>'
+    #             '<a id="video_face" href="http://52.15.187.123:5000/">'
+    #             '<img src="https://raw.githubusercontent.com/martinesk/Personal-Projects/main/pic/Capture4.png" >'
+    #             '</a>'
+    #
+    #             '</div>'
+    #             , unsafe_allow_html=1)
+
+
+
