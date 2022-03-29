@@ -6,7 +6,7 @@ import pydeck as pdk
 import plotly.express as px
 
 st.title('NYC Vehicle Collision Visualization')
-st.set_page_config(layout="wide")
+
 data_path = 'Data-Science-Web-App/Motor_Vehicle_Collisions_-_Crashes-1.csv'
 colunm_name = ['CRASH_DATE', 'CRASH_TIME', 'BOROUGH', 'ZIP_CODE', 'LATITUDE',
        'LONGITUDE', 'LOCATION', 'ON_STREET_NAME', 'CROSS_STREET_NAME',
