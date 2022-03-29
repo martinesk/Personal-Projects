@@ -19,6 +19,7 @@ from sklearn.model_selection import train_test_split
 from keras import optimizers
 from sklearn.metrics import mean_squared_error
 from math import sqrt
+import requests
 
 # Load Data
 facialpoints_df = pd.read_csv('http://52.15.187.123/KeyFacialPoints.csv')
@@ -202,10 +203,14 @@ Train the Model
 '''
 Load the results
 '''
-with open('http://52.15.187.123/KeyPointDetector.json', 'r') as json_file:
+
+detector = requests.get(url='http://52.15.187.123/KeyPointDetector.json', allow_redirects=True)
+weights = requests.get(url='http://52.15.187.123/weights.hdf5', allow_redirects=True)
+
+with open(detector, 'r') as json_file:
     json_SavedModel = json_file.read()
 model = tf.keras.models.model_from_json(json_SavedModel)
-model.load_weights('http://52.15.187.123/weights.hdf5')
+model.load_weights(weights)
 model.compile(loss="mean_squared_error", optimizer = 'adam', metrics = ['accuracy'])
 
 result = model.evaluate(X_test,y_test)
