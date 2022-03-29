@@ -70,7 +70,7 @@ with intro:
     
     I started my business ventures early in my life. After a couple early successes I started to help other businesses, regardless of sizes, with their oversea expansions with my good friends and partners around the world. 
     
-    Not long after my study in MBA, I realized the power of big data and the astonishing things you can achieve by leveraging those state of art Machine Learning and Deep Learning models.
+    Not long after my study in Foster MBA at UW, I realized the power of big data and the astonishing things you can achieve by leveraging those state of art Machine Learning and Deep Learning models.
     Combining years of internation business strategy and execution experiences with the insights from big data, I serve my clients with insightful business strategy, big data analysis and firm execution planning.
     
     Current based in 📍Los Angelos with clients in 📍London 📍Dubai 📍Shanghai 📍Beijing 📍Seattle 📍New York.   University of Washington alumni. 
