@@ -47,7 +47,7 @@ st.markdown("""
 }
 
 #DS-showcase img{
-    width:300px;
+    width:800px;
     display: inline-block;
     margin-left:100px;
 
