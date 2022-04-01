@@ -35,7 +35,7 @@ data = load_data(100000)
 print(data.info())
 original_data = data
 
-col1, col2 = st.columns()
+col1, col2 = st.columns(2)
 with col1:
     st.header('Where are the most people injured in NYC')
     injured_people = st.slider('Number of persons injured in vehicle ', 0, 19)
