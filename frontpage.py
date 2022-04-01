@@ -45,6 +45,14 @@ st.markdown("""
     margin-left=1000px;
 
 }
+
+#DS-showcase img{
+    width:300px;
+    display: inline-block;
+    margin-left:100px;
+
+}
+
 </style>
 """, unsafe_allow_html=True)
 
@@ -99,9 +107,11 @@ with intro:
                 "</a>"
                 "</h1>", unsafe_allow_html=True)
 
+
+
     st.markdown('<div>'
-                '<a id="image_face" href="https://share.streamlit.io/martinesk/personal-projects/main/image_facial_emotion_rec/streamlit_imgfacerec_main.py">'
-                '<img src="https://raw.githubusercontent.com/martinesk/Personal-Projects/main/pic/Figure_5.png" >'
+                '<a id="video_face" href="http://52.15.187.123:5000/">'
+                '<img src="https://raw.githubusercontent.com/martinesk/Personal-Projects/main/pic/Capture4.png" >'
                 '</a>'
 
                 '</div>'
@@ -114,12 +124,29 @@ with intro:
                 "</h1>", unsafe_allow_html=True)
 
     st.markdown('<div>'
-                '<a id="video_face" href="http://52.15.187.123:5000/">'
-                '<img src="https://raw.githubusercontent.com/martinesk/Personal-Projects/main/pic/Capture4.png" >'
+                '<a id="image_face" href="https://share.streamlit.io/martinesk/personal-projects/main/image_facial_emotion_rec/streamlit_imgfacerec_main.py">'
+                '<img src="https://raw.githubusercontent.com/martinesk/Personal-Projects/main/pic/Figure_5.png" >'
                 '</a>'
 
                 '</div>'
                 , unsafe_allow_html=1)
+
+
+    st.markdown("<h1 class='ds_showcase'>"
+                "<a href='https://share.streamlit.io/martinesk/personal-projects/main/Data-Science-Web-App/TrafficDashBoard.py' style='color:grey'>"
+                "Data Mining Showcase"
+                "</a>"
+                "</h1>", unsafe_allow_html=True)
+
+    st.markdown('<div>'
+                '<a id="DS-showcase" href="https://share.streamlit.io/martinesk/personal-projects/main/Data-Science-Web-App/TrafficDashBoard.py">'
+                '<img src="https://raw.githubusercontent.com/martinesk/Personal-Projects/main/pic/DS-showcase.png" >'
+                '</a>'
+
+                '</div>'
+                , unsafe_allow_html=1)
+
+
 
     st.markdown("<h1 class='ds_showcase'>"
                 "<a href='https://share.streamlit.io/martinesk/personal-projects/main/ML-Web-App/MLWebAppFramework.py' style='color:grey'>"
@@ -131,11 +158,7 @@ with intro:
                 "NLP: Text Generation"
                 "</a>"
                 "</h1>", unsafe_allow_html=True)
-    st.markdown("<h1 class='ds_showcase'>"
-                "<a href='https://share.streamlit.io/martinesk/personal-projects/main/Data-Science-Web-App/TrafficDashBoard.py' style='color:grey'>"
-                "Data Mining Showcase"
-                "</a>"
-                "</h1>", unsafe_allow_html=True)
+
 
 
 
